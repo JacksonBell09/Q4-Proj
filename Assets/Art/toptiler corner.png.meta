@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toptiler corner_0: 995120451436888891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
