@@ -7,6 +7,6 @@ public class transition : MonoBehaviour
 {
     public void Transition()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("2");
     }
 }
