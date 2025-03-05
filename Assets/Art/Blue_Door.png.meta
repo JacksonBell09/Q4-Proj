@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71d1d9ee68e055f4ebb822ff48039e0b
+guid: 75510b1e00c470e4cac014b245a8cd57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1828406610240105526
-    second: Tileset_baseset_0
+      213: 5743027176712457428
+    second: Blue_Door_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tileset_baseset_0
+      name: Blue_Door_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 160
-        height: 160
+        width: 61
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63c665cef1ecf5910800000000000000
-      internalID: 1828406610240105526
+      spriteID: 4dc4c531ac453bf40800000000000000
+      internalID: 5743027176712457428
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tileset_baseset_0: 1828406610240105526
+      Blue_Door_0: 5743027176712457428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71d1d9ee68e055f4ebb822ff48039e0b
+guid: 84920f77debd7fd4c970321877c013e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1828406610240105526
-    second: Tileset_baseset_0
+      213: 4929398206207074607
+    second: Red_Key_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tileset_baseset_0
+      name: Red_Key_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 160
+        x: 8
+        y: 5
+        width: 15
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63c665cef1ecf5910800000000000000
-      internalID: 1828406610240105526
+      spriteID: f21ab6d2d8db86440800000000000000
+      internalID: 4929398206207074607
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tileset_baseset_0: 1828406610240105526
+      Red_Key_0: 4929398206207074607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
