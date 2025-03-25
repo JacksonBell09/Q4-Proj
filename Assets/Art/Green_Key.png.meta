@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e4cc9f2a9dafb2b4e8a8a37f5a723f12
+guid: 27cb831672b94ed4f938aa46495ccd54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 995120451436888891
-    second: toptiler corner_0
+      213: 5156623168810661179
+    second: Green_Key_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toptiler corner_0
+      name: Green_Key_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 8
+        y: 5
+        width: 15
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b334f9837c06fcd00800000000000000
-      internalID: 995120451436888891
+      spriteID: b3532897371009740800000000000000
+      internalID: 5156623168810661179
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      toptiler corner_0: 995120451436888891
+      Green_Key_0: 5156623168810661179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
