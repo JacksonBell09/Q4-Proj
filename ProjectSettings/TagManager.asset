@@ -6,6 +6,8 @@ TagManager:
   tags:
   - reddoor
   - redkey
+  - waypoint1
+  - waypoint2
   layers:
   - Default
   - TransparentFX
