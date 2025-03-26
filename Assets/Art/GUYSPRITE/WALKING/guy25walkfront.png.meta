@@ -112,10 +112,10 @@ TextureImporter:
       name: guy25walkfront_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 31
-        width: 16
-        height: 30
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,10 +133,10 @@ TextureImporter:
       name: guy25walkfront_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 31
-        width: 16
-        height: 31
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: guy25walkfront_2
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 16
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: guy25walkfront_3
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 0
-        width: 16
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,7 +195,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e231775468d2a148ac4edf0528598a2
     internalID: 0
     vertices: []
     indices: 
