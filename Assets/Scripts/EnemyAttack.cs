@@ -7,7 +7,7 @@ public class EnemyAttack : MonoBehaviour
 {
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollision2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {

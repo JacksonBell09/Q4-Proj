@@ -8,51 +8,40 @@ public class Enemy : MonoBehaviour
     public GameObject[] wayPoints;
     private int currentWayPoint;
 
-    public Transform playerTransform;
     public bool isChasing;
-    public float chaseDistance;
+    public float distanceBetween;
+    public GameObject Player;
+    private float distance;
 
+   
     // Update is called once per frame
     void Update()
     {
-        isChasing = Vector2.Distance(transform.position, playerTransform.position) < chaseDistance;
-        if (isChasing)
+
+        distanceBetween = Vector2.Distance(transform.position, Player.transform.position);
+        Vector2 direction = Player.transform.position - transform.position;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        if(distanceBetween < 15)
         {
-            if (transform.position.x > playerTransform.position.x)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-                transform.position += Vector3.left * EnemySpeed * Time.deltaTime;
-            }
-            if (transform.position.x < playerTransform.position.x)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-                transform.position += Vector3.right * EnemySpeed * Time.deltaTime;
-            }
-            //for the Y axis
-            if (transform.position.y > playerTransform.position.y)
-            {
-                transform.localScale = new Vector3(1, 1, 1);
-                transform.position += Vector3.up * EnemySpeed * Time.deltaTime;
-            }
-            if (transform.position.y < playerTransform.position.y)
-            {
-                transform.localScale = new Vector3(-1, 1, 1);
-                transform.position += Vector3.down * EnemySpeed * Time.deltaTime;
-            }
+            transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, EnemySpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
+        
         else
         {
 
-        if(Vector2.Distance(wayPoints[currentWayPoint].transform.position, transform.position) < .1f)   
-        {
-            currentWayPoint++;
-            transform.Rotate(0, 180f, 0);
-            if(currentWayPoint >= wayPoints.Length)
+            if(Vector2.Distance(wayPoints[currentWayPoint].transform.position, transform.position) < .1f)   
             {
-                currentWayPoint = 0;
+                currentWayPoint++;
+                transform.Rotate(0, 180f, 0);
+                if(currentWayPoint >= wayPoints.Length)
+                {
+                    currentWayPoint = 0;
+                }
             }
-        }
-         transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentWayPoint].transform.position, Time.deltaTime * EnemySpeed);
+            transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentWayPoint].transform.position, Time.deltaTime * EnemySpeed);
         }
     }
 }
