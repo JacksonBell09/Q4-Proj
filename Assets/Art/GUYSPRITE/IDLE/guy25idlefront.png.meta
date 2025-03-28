@@ -106,10 +106,10 @@ TextureImporter:
       name: guy25idlefront_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 31
-        width: 16
-        height: 30
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,19 +127,19 @@ TextureImporter:
       name: guy25idlefront_1
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 16
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8395366f6fc341a90800000000000000
-      internalID: -7344178060941108936
+      spriteID: ff35150e71bcda74daac32f169159ca6
+      internalID: 2094424435
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 13b54b6829089d244b4c79f7e1665b7e
     internalID: 0
     vertices: []
     indices: 
@@ -156,7 +156,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       guy25idlefront_0: 1642555224969073834
-      guy25idlefront_1: -7344178060941108936
+      guy25idlefront_1: 2094424435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
