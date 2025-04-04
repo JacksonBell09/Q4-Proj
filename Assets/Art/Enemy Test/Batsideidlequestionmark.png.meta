@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 6c58a47cb0ec4654cb64663e0275a5cc
+guid: 8222e11623054954a85534c62087ade6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7692873641569869456
-    second: BatIdle_0
+      213: 3040973518867696884
+    second: Batsideidlequestionmark_0
   - first:
-      213: 5721636989891954556
-    second: BatIdle_1
+      213: 3206433271708577259
+    second: Batsideidlequestionmark_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BatIdle_0
+      name: Batsideidlequestionmark_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 1
+        y: 33
+        width: 21
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,50 +117,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09edcb381d392ca60800000000000000
-      internalID: 7692873641569869456
+      spriteID: 4fc8a7bbd45b33a20800000000000000
+      internalID: 3040973518867696884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BatIdle_1
+      name: Batsideidlequestionmark_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c77ce3c1786576f40800000000000000
-      internalID: 5721636989891954556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BatIdle_2
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bf11bed6bda78b84b8b8fb6accf94e27
-      internalID: 1995310559
+      spriteID: bedee2c721a8f7c20800000000000000
+      internalID: 3206433271708577259
       vertices: []
       indices: 
       edges: []
@@ -168,7 +147,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ddefc44b947ebbf45b8eff2853f0d332
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -176,9 +155,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BatIdle_0: 7692873641569869456
-      BatIdle_1: 5721636989891954556
-      BatIdle_2: 1995310559
+      Batsideidlequestionmark_0: 3040973518867696884
+      Batsideidlequestionmark_1: 3206433271708577259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
