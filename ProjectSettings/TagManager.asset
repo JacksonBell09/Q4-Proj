@@ -8,6 +8,7 @@ TagManager:
   - redkey
   - waypoint1
   - waypoint2
+  - BlueDoor
   layers:
   - Default
   - TransparentFX
