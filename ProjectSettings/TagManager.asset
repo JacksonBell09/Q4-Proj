@@ -13,6 +13,18 @@ TagManager:
   - greenkey
   - greendoor
   - bluedoor
+  - bluedoor2
+  - bluedoor3
+  - reddoor2
+  - reddoor3
+  - greendoor2
+  - greendoor3
+  - greenkey2
+  - greenkey3
+  - bluekey2
+  - bluekey3
+  - redkey2
+  - redkey3
   layers:
   - Default
   - TransparentFX
