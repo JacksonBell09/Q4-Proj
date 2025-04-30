@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.SceneManagement;
 public class BlueDoorL1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   // [SerializeField] public GameObject Player;
+   [SerializeField] private GameObject canvas;
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        
+             if(other.gameObject.CompareTag("bluedoor"))
+            {
+          if (gameObject.GetComponent<keycollect>().CharacterHasBLUEKey)
+        {
+           SceneManager.LoadScene("2");
+        }
+        else
+        {
+            canvas.SetActive(true);
+            StartCoroutine(bluedoors());
+        }
+            }
+    }
+    
+     
+    public IEnumerator bluedoors()
+    {
+        yield return new WaitForSeconds(5);
+        canvas.SetActive(false);
     }
 }

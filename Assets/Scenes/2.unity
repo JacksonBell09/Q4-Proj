@@ -9504,7 +9504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e52de845e27c6945be42bba60bc1bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1438437306}
   offset: {x: 0, y: 2, z: -10}
   smoothTime: 0.25
 --- !u!1 &1438437299
@@ -9543,6 +9543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   CharacterHasREDKey: 0
+  CharacterHasBLUEKey: 0
+  CharacterHasGREENKey: 0
 --- !u!114 &1438437301
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ TagManager:
   - BlueDoor
   - bluekey
   - greenkey
+  - greendoor
+  - bluedoor
   layers:
   - Default
   - TransparentFX
