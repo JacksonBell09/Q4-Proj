@@ -9160,7 +9160,7 @@ Transform:
   m_GameObject: {fileID: 1290562986}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.859797, y: -58.341755, z: 0}
+  m_LocalPosition: {x: -153.4, y: 15, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9541,10 +9541,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72caaf542ba078e44aa8207d242a35e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   score: 0
   CharacterHasREDKey: 0
   CharacterHasBLUEKey: 0
   CharacterHasGREENKey: 0
+  CharacterHasREDKey2: 0
+  CharacterHasBLUEKey2: 0
+  CharacterHasGREENKey2: 0
+  CharacterHasREDKey3: 0
+  CharacterHasBLUEKey3: 0
+  CharacterHasGREENKey3: 0
 --- !u!114 &1438437301
 MonoBehaviour:
   m_ObjectHideFlags: 0
