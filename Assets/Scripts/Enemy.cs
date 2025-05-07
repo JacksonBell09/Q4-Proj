@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public float distanceBetween;
     public GameObject Player;
     private float distance;
+    public Animator animator;
 
    //Section: basic movement, chase script, and waypoint script.
     // Update is called once per frame
@@ -22,6 +23,9 @@ public class Enemy : MonoBehaviour
         Vector2 direction = Player.transform.position - transform.position;
         direction.Normalize();
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+
+        Vector2 oldPosition; //this stores our initial position before update (remember this when you get to the end of this section)
+        Vector2 animCheck = new Vector2(0f,0f); //this is a variable that we're using to check every update
 
         if(distanceBetween < 15)
         {
@@ -41,29 +45,36 @@ public class Enemy : MonoBehaviour
                     currentWayPoint = 0;
                 }
             }
+            oldPosition = transform.position; //the old position is defined here
             transform.position = Vector2.MoveTowards(transform.position, wayPoints[currentWayPoint].transform.position, Time.deltaTime * EnemySpeed);
+            animCheck = new Vector2(transform.position.x, transform.position.y) - oldPosition; //this is checking our current position, and then subtracting our old pos.
+            //By doing this, we're finding our change in position since the last update, if our previous.pos = 0, and our new.pos = 1, 4, then our change was 1,4, we're moving up and right.
         }
         //End of previous section
 
         //Section: Animation Logic
-        if (verticleInput >= 0)
+        if (animCheck.y >= 0)
         {
-            animator.setbool("IsMovingUp", IsMovingUp);
+            animator.SetBool("IsMovingUp", true); //character is moving up
+            animator.SetBool("IsMovingDown", false);//therefore it cannot be moving down (remember the logan analogy)
         }
 
-        if (verticleInput <= 0)
+        if (animCheck.y <= 0)
         {
-            animator.setbool("IsMovingDown", IsMovingDown);
+            animator.SetBool("IsMovingDown", true);
+            animator.SetBool("IsMovingUp", false);
         }
 
-        if (horizontalInput >= 0)
+        if (animCheck.x >= 0)
         {
-            animator.setbool("IsMovingRight", IsMovingRight);
+            animator.SetBool("IsMovingRight", true);
+            animator.SetBool("IsMovingLeft", false);
         }
 
-        if (horizontalInput <= 0)
+        if (animCheck.x <= 0)
         {
-            animator.setbool("IsMovingLeft", IsMovingLeft);
+            animator.SetBool("IsMovingLeft", true);
+            animator.SetBool("IsMovingRight", false);
         }
         //End of previous section
     }
