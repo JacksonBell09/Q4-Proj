@@ -320,6 +320,7 @@ MonoBehaviour:
   isChasing: 0
   distanceBetween: 0
   Player: {fileID: 1751211753}
+  animator: {fileID: 0}
 --- !u!212 &83741505
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2025,6 +2026,7 @@ MonoBehaviour:
   isChasing: 0
   distanceBetween: 5
   Player: {fileID: 1751211753}
+  animator: {fileID: 0}
 --- !u!212 &1246924218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3180,6 +3182,7 @@ MonoBehaviour:
   isChasing: 0
   distanceBetween: 0
   Player: {fileID: 1751211753}
+  animator: {fileID: 0}
 --- !u!212 &1614549315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -151942,10 +151945,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f066be09a333b34abff4eb3719191a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Moving: 0
   movespeed: 5
   Stamina: 100
   StaminaText: {fileID: 1549131083}
   CharacterIsRunning: 0
+  animator: {fileID: 1751211764}
 --- !u!212 &1751211759
 SpriteRenderer:
   m_ObjectHideFlags: 0
