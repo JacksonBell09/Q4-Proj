@@ -5,13 +5,14 @@ using TMPro;
 
 // jackson Bell
 public class Movement : MonoBehaviour
-{
+{ 
     public bool Moving;
     public float movespeed = 5f;
     private Rigidbody2D rb;
     public float Stamina = 100f;
     public TMP_Text StaminaText;
     public bool CharacterIsRunning;
+    public Animator animator;
     //start is called before the first frame update
     void Start()
     {
@@ -24,11 +25,11 @@ public class Movement : MonoBehaviour
         //code for horizontal movement
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         
-        if(horizontalInput < 0)
+        if(horizontalInput <= 0)
         {
         transform.localScale = new Vector3(-1, 1, 1);
         }
-        else if(horizontalInput > 0)
+        else if(horizontalInput >= 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
@@ -38,16 +39,22 @@ public class Movement : MonoBehaviour
         //player is jumping
         rb.velocity = moveVector;
 
+
         animator.SetFloat("X", horizontalInput);
         animator.SetFloat("Y", verticalInput);
         
 
-            if (horizontalInput !=0) or (verticalInput !=0);
+            if(horizontalInput != 0 || verticalInput !=0);
             {
-             Moving = true;
+                Moving = true;
             }
  
-        animator.SetBool("Moving", Moving);
+        animator.SetBool("Moving", true);
+
+        
+
+
+
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && (Stamina > 0)) //checks for left shift
         {
